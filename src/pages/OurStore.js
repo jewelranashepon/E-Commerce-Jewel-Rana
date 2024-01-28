@@ -3,6 +3,7 @@ import BreadCrumb from '../components/BreadCrumb';
 import Meta from '../components/Meta';
 import ReactStars from "react-rating-stars-component";
 import ProductCard from '../components/ProductCard';
+import Color from '../components/Color';
 
 
 
@@ -88,14 +89,7 @@ const OurStore = () => {
                             <h5 className="sub-title">Color</h5>
                             <div>
                                 <div>
-                                    <ul className="colors fs-0">
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                    </ul>
-
+                                    <Color />
                                 </div>
                             </div>
 
