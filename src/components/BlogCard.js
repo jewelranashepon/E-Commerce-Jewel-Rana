@@ -29,7 +29,7 @@ const BlogCard = () => {
                 <p className="description">Under the azure canvas of the sky, a beautiful day unfurls its splendor. The sun, 
                 a radiant maestro,...
                 </p>
-                <Link to="/" className="button">
+                <Link to="/blog/:id" className="button">
                     Read More
                 </Link>
 

@@ -276,6 +276,22 @@ footer .input-group-text {
   justify-content: space-between;
 }
 
+.single-blog-card h3{
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--color-1c1c1b);
+}
+.single-blog-card p{
+  font-size: 14px;
+  color: var(--color-3b4149);
+}
+.single-blog-card a{
+  font-size: 18px;
+  color: var(--color-777777);
+  margin-bottom: 20px;
+
+}
+
 /*Blog Part ends */
 
 /* Product Card Start */
@@ -620,3 +636,10 @@ border-color: inherit;
 
 
 /* Login Card Ends */
+
+/* Policy Page Start */
+.policy {
+  background-color: white;
+  padding: 30px;
+}
+/* Policy page ends */
