@@ -4,10 +4,13 @@ import BreadCrumb from '../components/BreadCrumb';
 import ProductCard from '../components/ProductCard';
 import ReactStars from "react-rating-stars-component";
 import { useState } from 'react';
+import ReactImageZoom from 'react-image-zoom';
+
 
 
 
 const SingleProduct = () => {
+  const props = {width: 400, height: 500, zoomWidth: 500, img: "https://images.samsung.com/is/image/samsung/assets/in/explore/brand/5-best-android-mobile-phones-2022-in-india/banner-mobile-720x761-080422.jpg?$720_N_JPG$"};
   const [orderedProduct, setorderedProduct]= useState(true);
   return (
     <>
@@ -18,6 +21,32 @@ const SingleProduct = () => {
         <div className="container-xxl">
             <div className="row">
                 <div className="col-6">
+                  <div className="main-product-image">
+                    <div>
+                      <ReactImageZoom {...props} />
+                    </div>
+
+
+                  </div>
+
+                  <div className="other-product-images d-flex flex-wrap gap-15">
+                    <div>
+                      <img src="https://images.samsung.com/is/image/samsung/assets/in/explore/brand/5-best-android-mobile-phones-2022-in-india/banner-mobile-720x761-080422.jpg?$720_N_JPG$" alt="" className="img-fluid" />
+                    </div>
+
+                    <div>
+                    <img src="https://images.samsung.com/is/image/samsung/assets/in/explore/brand/5-best-android-mobile-phones-2022-in-india/banner-mobile-720x761-080422.jpg?$720_N_JPG$" alt="" className="img-fluid" />
+                    </div>
+
+                    <div>
+                    <img src="https://images.samsung.com/is/image/samsung/assets/in/explore/brand/5-best-android-mobile-phones-2022-in-india/banner-mobile-720x761-080422.jpg?$720_N_JPG$" alt="" className="img-fluid" />
+                    </div>
+
+                    <div>
+                    <img src="https://images.samsung.com/is/image/samsung/assets/in/explore/brand/5-best-android-mobile-phones-2022-in-india/banner-mobile-720x761-080422.jpg?$720_N_JPG$" alt="" className="img-fluid" />
+                    </div>
+
+                  </div>
 
                 </div>
                 <div className="col-6">
@@ -33,8 +62,8 @@ const SingleProduct = () => {
           <div className="container-xxl">
             <div className="row">
               <div className="col-12">
+               <h4 className="">Description</h4>
                 <div className="bg-white p-3">
-                  <h4 className="">Description</h4>
                   <p>
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
@@ -52,10 +81,11 @@ const SingleProduct = () => {
 
         </div>
 
-        <section className="reviews-wrapper py-5 home-wrapper-2">
+        <section className="reviews-wrapper home-wrapper-2">
           <div className="container-xxl">
             <div className="row">
               <div className="col-12">
+                <h3>Reviews</h3>
                <div className="review-inner-wrapper">
                 <div className="review-head d-flex justify-content-between align-items-end">
                     <div>
@@ -110,7 +140,7 @@ const SingleProduct = () => {
 
                 </div>
 
-                <div className="reviews">
+                <div className="reviews mt-4">
                   <div className="review">
                     <div className="d-flex align-items-center gap-10">
                       <h6 className="mb-0">Jewel Rana</h6>
@@ -122,9 +152,14 @@ const SingleProduct = () => {
                         value={4}
                         activeColor="#ffd700"/>
                       </div>
-
-
                     </div>
+                    <p className="mt-3">
+                      Samsung Galaxy S25 is a phone that looks great and has a lot to offer.
+                      With the latest processor and a long-lasting battery, it is the perfect
+                      choice for people who are always on the go. The Samsung Galaxy S25 5G
+                      is one of the top smartphones in its category. It features a beautiful
+                      design and an impressive display.
+                    </p>
 
                   </div>
 
