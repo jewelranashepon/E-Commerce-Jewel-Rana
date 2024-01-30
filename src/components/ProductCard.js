@@ -13,7 +13,7 @@ const ProductCard = (props) => {
   return (
    <>
     <div className={`${location.pathname == "/store" ? `gr-${grid}` : "col-3"}`}>
-        <Link className="product-card position-relative">
+        <Link to=":id" className="product-card position-relative">
             <div className="product-image">
                 <img src="images/watch.jpg" alt="product-image" className="img-fluid"/>
                 <img src="images/watch-1.jpg" alt="product-image" className="img-fluid"/>
@@ -67,7 +67,7 @@ const ProductCard = (props) => {
     </div>
 
     <div className={`${location.pathname == "/store" ? `gr-${grid}` : "col-3"}`}>
-        <Link className="product-card position-relative">
+        <Link to=":id" className="product-card position-relative">
             <div className="product-image">
                 <img src="images/watch.jpg" alt="product-image" className="img-fluid"/>
                 <img src="images/watch-1.jpg" alt="product-image" className="img-fluid"/>
